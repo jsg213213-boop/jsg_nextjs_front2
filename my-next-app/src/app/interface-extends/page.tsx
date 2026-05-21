@@ -71,7 +71,7 @@ export default function InterfaceExtendsPage() {
           borderRadius: "8px",
         }}
       >
-        <h3>🐶 일반 반려묘 (Cat 타입)</h3>
+        <h3>🐱 | 일반 반려묘 (Cat 타입)</h3>
         <p>
           <em>Animal(name, age) + Cat(breed)</em>
         </p>
