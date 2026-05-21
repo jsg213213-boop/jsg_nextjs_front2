@@ -27,14 +27,14 @@ interface Puppy extends Cat, Animal {
 export default function InterfaceExtendsPage() {
   // --- 상태 관리 ---
 
-  // 1. 첫 번째 일반 고양이 객체 (라떼)
+  // 1. 첫 번째 일반 고양이 객체 
   const [myCat, setMyCat] = useState<Cat>({
     name: "라떼",
     age: 2,
     breed: "스코티쉬폴드",
   });
 
-  // 2. 두 번째 일반 고양이 객체 (밀크 추가)
+  // 2. 두 번째 일반 고양이 객체 
   const [myCat2, setMyCat2] = useState<Cat>({
     name: "밀크",
     age: 2,
@@ -55,7 +55,7 @@ export default function InterfaceExtendsPage() {
     setMyCat({ ...myCat, age: myCat.age + 1 });
   };
 
-  // 밀크 나이 증가 (추가)
+  // 밀크 나이 증가 
   const ageUpCat2 = () => {
     setMyCat2({ ...myCat2, age: myCat2.age + 1 });
   };
@@ -73,7 +73,7 @@ export default function InterfaceExtendsPage() {
         TypeScript Interface 확장 (Extends) 실습
       </h1>
 
-      {/* 1. Cat 타입 출력 영역 - 라떼 */}
+      {/* 1. Cat 타입 출력 영역 */}
       <div
         style={{
           marginBottom: "20px",
@@ -112,7 +112,7 @@ export default function InterfaceExtendsPage() {
         </button>
       </div>
 
-      {/* [추가] 2. Cat 타입 출력 영역 - 밀크 */}
+      {/*2. Cat 타입 출력 영역 */}
       <div
         style={{
           marginBottom: "20px",
