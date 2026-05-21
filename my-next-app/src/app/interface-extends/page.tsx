@@ -31,16 +31,16 @@ export default function InterfaceExtendsPage() {
 
   // 일반 고양이 객체 (Cat 타입: name, age, breed 필수)
   const [myCat, setMyCat] = useState<Cat>({
-    name: "밀크",
+    name: "라떼",
     age: 3,
-    breed: "먼치킨",
+    breed: "스코티쉬폴드",
   });
 
   // 어린 고양이 객체 (Puppy 타입: name, age, breed, isVaccinated 필수)
   const [myPuppy, setMyPuppy] = useState<Puppy>({
-    name: "구름이",
+    name: "초코",
     age: 1,
-    breed: "페르시안",
+    breed: "먼치킨",
     isVaccinated: false,
   });
 
