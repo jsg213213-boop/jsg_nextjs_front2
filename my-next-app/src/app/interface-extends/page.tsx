@@ -101,45 +101,6 @@ export default function InterfaceExtendsPage() {
         </button>
       </div>
 
-      {/* 1. Cat 타입 출력 영역 */}
-      <div
-        style={{
-          marginBottom: "20px",
-          padding: "15px",
-          backgroundColor: "#f0f8ff",
-          borderRadius: "8px",
-        }}
-      >
-        <h3>🐶 일반 반려묘 (Cat 타입)</h3>
-        <p>
-          <em>Animal(name, age) + Cat(breed)</em>
-        </p>
-        <ul>
-          <li>
-            <strong>이름:</strong> {myCat.name}
-          </li>
-          <li>
-            <strong>나이:</strong> {myCat.age}살
-          </li>
-          <li>
-            <strong>묘종:</strong> {myCat.breed}
-          </li>
-        </ul>
-        <button
-          onClick={ageUpCat}
-          style={{
-            padding: "8px 16px",
-            cursor: "pointer",
-            backgroundColor: "#0070f3",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-          }}
-        >
-          {myCat.name} 나이 +1
-        </button>
-      </div>
-
       {/* 2. Puppy 타입 출력 영역 */}
       <div
         style={{
