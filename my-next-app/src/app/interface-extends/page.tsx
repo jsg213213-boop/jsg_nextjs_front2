@@ -20,8 +20,6 @@ interface Cat extends Animal {
 // ==========================================
 // 3. 다중 확장 (손주) - Cat과 Animal을 모두 물려받음
 // ==========================================
-// 참고: Cat가 이미 Animal을 상속받았기 때문에 extends Cat만 써도 되지만,
-// 콤마(,)를 통해 여러 인터페이스를 동시에 상속받을 수 있음을 보여주는 예시입니다.
 interface Puppy extends Cat, Animal {
   isVaccinated: boolean;
 }
@@ -29,24 +27,37 @@ interface Puppy extends Cat, Animal {
 export default function InterfaceExtendsPage() {
   // --- 상태 관리 ---
 
-  // 일반 고양이 객체 (Cat 타입: name, age, breed 필수)
+  // 1. 첫 번째 일반 고양이 객체 (라떼)
   const [myCat, setMyCat] = useState<Cat>({
     name: "라떼",
     age: 3,
     breed: "스코티쉬폴드",
   });
 
-  // 어린 고양이 객체 (Puppy 타입: name, age, breed, isVaccinated 필수)
-  const [myPuppy, setMyPuppy] = useState<Puppy>({
+  // 2. 두 번째 일반 고양이 객체 (밀크 추가)
+  const [myCat2, setMyCat2] = useState<Cat>({
     name: "밀크",
+    age: 1,
+    breed: "먼치킨",
+  });
+
+  // 3. 어린 고양이 객체 (Puppy 타입 예시용)
+  const [myPuppy, setMyPuppy] = useState<Puppy>({
+    name: "초코", // 밀크가 일반 반려묘로 이동했으므로, 예시 이름을 변경했습니다.
     age: 1,
     breed: "먼치킨",
     isVaccinated: false,
   });
 
   // --- 이벤트 핸들러 ---
+  // 라떼 나이 증가
   const ageUpCat = () => {
     setMyCat({ ...myCat, age: myCat.age + 1 });
+  };
+
+  // 밀크 나이 증가 (추가)
+  const ageUpCat2 = () => {
+    setMyCat2({ ...myCat2, age: myCat2.age + 1 });
   };
 
   const vaccinatePuppy = () => {
@@ -62,7 +73,7 @@ export default function InterfaceExtendsPage() {
         TypeScript Interface 확장 (Extends) 실습
       </h1>
 
-      {/* 1. Cat 타입 출력 영역 */}
+      {/* 1. Cat 타입 출력 영역 - 라떼 */}
       <div
         style={{
           marginBottom: "20px",
@@ -101,7 +112,46 @@ export default function InterfaceExtendsPage() {
         </button>
       </div>
 
-      {/* 2. Puppy 타입 출력 영역 */}
+      {/* [추가] 2. Cat 타입 출력 영역 - 밀크 */}
+      <div
+        style={{
+          marginBottom: "20px",
+          padding: "15px",
+          backgroundColor: "#f0f8ff", // 라떼와 동일한 파란색 배경
+          borderRadius: "8px",
+        }}
+      >
+        <h3>🐱 | 일반 반려묘 (Cat 타입)</h3>
+        <p>
+          <em>Animal(name, age) + Cat(breed)</em>
+        </p>
+        <ul>
+          <li>
+            <strong>이름:</strong> {myCat2.name}
+          </li>
+          <li>
+            <strong>나이:</strong> {myCat2.age}살
+          </li>
+          <li>
+            <strong>묘종:</strong> {myCat2.breed}
+          </li>
+        </ul>
+        <button
+          onClick={ageUpCat2}
+          style={{
+            padding: "8px 16px",
+            cursor: "pointer",
+            backgroundColor: "#0070f3",
+            color: "white",
+            border: "none",
+            borderRadius: "4px",
+          }}
+        >
+          {myCat2.name} 나이 +1
+        </button>
+      </div>
+
+      {/* 3. Puppy 타입 출력 영역 */}
       <div
         style={{
           marginBottom: "20px",
