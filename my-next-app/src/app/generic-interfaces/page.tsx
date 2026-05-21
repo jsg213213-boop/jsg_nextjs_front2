@@ -37,7 +37,7 @@ export default function GenericInterfacesPage() {
   const fetchUser = () => {
     // T 자리에 User 타입이 들어감 (data 속성에 User 객체가 들어가야 함)
     const response: ApiResponse<User> = {
-      data: { id: 1, name: '이상용' },
+      data: { id: 1, name: '정성규' },
       status: 200,
       message: '단일 유저 정보 조회 성공',
     };
