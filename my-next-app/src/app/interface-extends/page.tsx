@@ -41,7 +41,7 @@ export default function InterfaceExtendsPage() {
     breed: "먼치킨",
   });
 
-  // 3. 어린 고양이 객체 (Puppy 타입 예시용)
+  // 3. 아기 고양이 객체 (Puppy 타입 예시용)
   const [myPuppy, setMyPuppy] = useState<Puppy>({
     name: "초코", // 밀크가 일반 반려묘로 이동했으므로, 예시 이름을 변경했습니다.
     age: 1,
@@ -151,7 +151,7 @@ export default function InterfaceExtendsPage() {
         </button>
       </div>
 
-      {/* 3. Puppy 타입 출력 영역 */}
+      {/* 3. 아기 고양이 타입 출력 영역 */}
       <div
         style={{
           marginBottom: "20px",
