@@ -38,7 +38,7 @@ export default function InterfaceExtendsPage() {
 
   // 어린 고양이 객체 (Puppy 타입: name, age, breed, isVaccinated 필수)
   const [myPuppy, setMyPuppy] = useState<Puppy>({
-    name: "초코",
+    name: "밀크",
     age: 1,
     breed: "먼치킨",
     isVaccinated: false,
