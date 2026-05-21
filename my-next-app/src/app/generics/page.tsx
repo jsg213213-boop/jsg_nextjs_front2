@@ -57,7 +57,7 @@ export default function GenericsPage() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
         {/* 문자열 배열 테스트 */}
         <section style={{ padding: '15px', backgroundColor: '#eef2ff', borderRadius: '8px' }}>
-          <h4>문자열 배열: [{'사과'}, {'바나나'}]</h4>
+          <h4>문자열 배열: {`['사과', '바나나']`}</h4>
           <button onClick={handleStringArray} style={{ padding: '8px 12px', cursor: 'pointer', backgroundColor: '#3b82f6', color: 'white', border: 'none', borderRadius: '4px' }}>
             첫 번째 요소 가져오기
           </button>
