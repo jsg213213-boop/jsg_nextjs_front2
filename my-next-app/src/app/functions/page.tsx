@@ -65,11 +65,11 @@ export default function FunctionsPage() {
         <h3>2. 선택적 매개변수 (?)</h3>
         <p>두 번째 인자(title)는 생략이 가능합니다.</p>
         <div style={{ display: 'flex', gap: '10px', marginBottom: '10px' }}>
-          <button onClick={() => setGreetResult(greet('이상용'))} style={{ padding: '8px' }}>
-            greet({'이상용'})
+          <button onClick={() => setGreetResult(greet('정성규'))} style={{ padding: '8px' }}>
+            greet({'정성규'})
           </button>
-          <button onClick={() => setGreetResult(greet('이상용', '강사'))} style={{ padding: '8px' }}>
-            greet({'이상용'}, {'강사'})
+          <button onClick={() => setGreetResult(greet('정성규', '수강생'))} style={{ padding: '8px' }}>
+            greet({'정성규'}, {'수강생'})
           </button>
         </div>
         <p><strong>인사말:</strong> {greetResult || '대기 중...'}</p>

@@ -33,6 +33,24 @@ export default function RootLayout({
           <Link href="/interface-extends">Interface Extends</Link>
           &nbsp;&nbsp;
           <Link href="/type-aliases">Type Alias</Link>
+          &nbsp;&nbsp;
+          <Link href="/functions">Functions</Link>
+          &nbsp;&nbsp;
+          <Link href="/generics">Generics</Link>
+          &nbsp;&nbsp;
+          <Link href="/generic-interfaces">Generic Interfaces</Link>
+          &nbsp;&nbsp;
+          <Link href="/generic-constraints">Generic Constraints</Link>
+          &nbsp;&nbsp;
+          <Link href="/utility-types">Utility Types</Link>
+          &nbsp;&nbsp;
+          <Link href="/component-props">Component Props</Link>
+          &nbsp;&nbsp;
+          <Link href="/use-state-types">Use State Types</Link>
+          &nbsp;&nbsp;
+          <Link href="/react-events">React Events</Link>
+          &nbsp;&nbsp;
+          <Link href="/practical-example">실전 예제</Link>
         </nav>
         <main>{children}</main>
       </body>
