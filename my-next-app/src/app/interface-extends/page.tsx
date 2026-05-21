@@ -160,7 +160,7 @@ export default function InterfaceExtendsPage() {
           borderRadius: "8px",
         }}
       >
-        <h3>🐾 어린 고양이 (Puppy 타입)</h3>
+        <h3>🐾 아기 고양이 (Puppy 타입)</h3>
         <p>
           <em>Cat(name, age, breed) + Puppy(isVaccinated)</em>
         </p>
