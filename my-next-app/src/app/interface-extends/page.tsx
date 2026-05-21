@@ -43,9 +43,9 @@ export default function InterfaceExtendsPage() {
 
   // 3. 아기 고양이 객체 (Puppy 타입 예시용)
   const [myPuppy, setMyPuppy] = useState<Puppy>({
-    name: "초코", // 밀크가 일반 반려묘로 이동했으므로, 예시 이름을 변경했습니다.
+    name: "구름이",
     age: 1,
-    breed: "먼치킨",
+    breed: "페르시안",
     isVaccinated: false,
   });
 
