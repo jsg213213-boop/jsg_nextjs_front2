@@ -30,14 +30,14 @@ export default function InterfaceExtendsPage() {
   // 1. 첫 번째 일반 고양이 객체 (라떼)
   const [myCat, setMyCat] = useState<Cat>({
     name: "라떼",
-    age: 3,
+    age: 2,
     breed: "스코티쉬폴드",
   });
 
   // 2. 두 번째 일반 고양이 객체 (밀크 추가)
   const [myCat2, setMyCat2] = useState<Cat>({
     name: "밀크",
-    age: 1,
+    age: 2,
     breed: "먼치킨",
   });
 
