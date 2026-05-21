@@ -32,10 +32,10 @@ function formatUser(user: Pick<User, 'name' | 'email'>): string {
 export default function PracticalExamplePage() {
   // --- 상태 관리 ---
   const [users, setUsers] = useState<User[]>([
-    { id: 1, name: '정성규', email: 'jsg0213@test.com', role: 'admin' },
-    { id: 2, name: '김지연', email: 'kjy0819@test.com', role: 'user' },
-    { id: 3, name: '이여름', email: 'lyr0110@test.com', role: 'user' },
-    { id: 4, name: '조나단', email: 'jnd0201@test.com', role: 'user' },
+    { id: 1, name: '정성규', email: 'jsg19920213@test.com', role: 'admin' },
+    { id: 2, name: '김지연', email: 'kjy19950819@test.com', role: 'user' },
+    { id: 3, name: '이여름', email: 'lyr19990110@test.com', role: 'user' },
+    { id: 4, name: '조나단', email: 'jnd20000201@test.com', role: 'user' },
   ]);
 
   const [adminList, setAdminList] = useState<User[]>([]);
