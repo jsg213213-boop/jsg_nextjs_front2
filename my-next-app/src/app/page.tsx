@@ -4,7 +4,7 @@ export default function HomePage() {
     <main>
       <h1>Next.js 시작!</h1>
       <h2>정성규</h2>
-      <h2>오늘의 점심메뉴:냉모밀+일식돈가스</h2>
+      <h2>오늘의 점심메뉴:제육덮밥</h2>
       <p>jsg next.js 테스트 중입니다!</p>
       <p>API 테스트 중입니다!</p>
       <p>백엔드 테스트 중입니다!</p>
