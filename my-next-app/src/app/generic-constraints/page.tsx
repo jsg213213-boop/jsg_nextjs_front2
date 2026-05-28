@@ -29,7 +29,8 @@ interface Product {
 
 const users: User[] = [
   { id: 1, name: '정성규', role: '수강생' },
-  { id: 2, name: '김지연', role: '수강생' },
+  { id: 2, name: '김보나', role: '수강생' },
+  { id: 3, name: '이여름', role: '수강생' },
 ];
 
 const products: Product[] = [
