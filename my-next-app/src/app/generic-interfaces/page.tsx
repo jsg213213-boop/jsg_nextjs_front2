@@ -59,7 +59,7 @@ export default function GenericInterfacesPage() {
     const response: ApiResponse<User[]> = {
       data: [
         { id: 1, name: '정성규' },
-        { id: 2, name: '김지연' },
+        { id: 2, name: '김보나' },
         { id: 3, name: '이여름' },
       ],
       status: 200,
