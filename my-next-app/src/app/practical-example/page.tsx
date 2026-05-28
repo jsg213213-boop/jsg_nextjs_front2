@@ -33,7 +33,7 @@ export default function PracticalExamplePage() {
   // --- 상태 관리 ---
   const [users, setUsers] = useState<User[]>([
     { id: 1, name: '정성규', email: 'jsg19920213@test.com', role: 'admin' },
-    { id: 2, name: '김보나', email: 'kjy19950819@test.com', role: 'user' },
+    { id: 2, name: '김보나', email: 'kbn19950819ㄴ@test.com', role: 'user' },
     { id: 3, name: '이여름', email: 'lyr19990110@test.com', role: 'user' },
     { id: 4, name: '조나단', email: 'jnd20000201@test.com', role: 'user' },
   ]);
