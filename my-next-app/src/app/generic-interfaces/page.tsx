@@ -37,7 +37,7 @@ export default function GenericInterfacesPage() {
   const fetchUser = () => {
     // T 자리에 User 타입이 들어감 (data 속성에 User 객체가 들어가야 함)
     const response: ApiResponse<User> = {
-      data: { id: 1, name: '정성규' },
+      data: { id: 19920213, name: '정성규' },
       status: 200,
       message: '단일 유저 정보 조회 성공',
     };
@@ -58,9 +58,9 @@ export default function GenericInterfacesPage() {
     // T 자리에 User[] (유저 배열) 타입이 들어감
     const response: ApiResponse<User[]> = {
       data: [
-        { id: 1, name: '정성규' },
-        { id: 2, name: '김보나' },
-        { id: 3, name: '이여름' },
+        { id: 293, name: '정성규' },
+        { id: 282, name: '김보나' },
+        { id: 251, name: '이여름' },
       ],
       status: 200,
       message: '유저 목록 조회 성공',
