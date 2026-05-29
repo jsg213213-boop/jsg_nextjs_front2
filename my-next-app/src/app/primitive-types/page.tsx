@@ -10,8 +10,8 @@ export default function PrimitiveTypesPage() {
 
   // 2. null 과 undefined
   // 초기값은 null/undefined 이지만, 나중에 문자열이 들어올 수 있음을 명시
-  const nickname: string | null = null;
-  const address: string | undefined = undefined;
+  const nickname: string = "jsg";
+  const address: string = "부산 사하구 다대로 470 다대해송아파트";
 
   // 3. any (사용 자제!)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
